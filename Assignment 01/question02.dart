@@ -7,6 +7,6 @@ void main(){
   } else if (ageOfPerson2 > ageOfPerson1){
     print("Person 2 is older");
   } else {
-    print("Both of them are the same age");
+    print("Both of them are of the same age");
   }
 }
