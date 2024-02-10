@@ -6,14 +6,12 @@ void main(){
 
   for (var i = 0; i < length; i++) {
     stdout.write("Enter element ${i+1}: ");
-    int element = int.parse(stdin.readLineSync() ?? '0');
-    input.add(element);
+    input.add(int.parse(stdin.readLineSync() ?? '0'));
   }
 
   print("Even numbers: ");
-  for (int i = 0; i < input.length; i++) {
+  for (int i = 0; i < length; i++) {
     if (input[i] % 2 == 0) {
-      // print(input[i]);
       stdout.write("${input[i]} ");
     }
   }
