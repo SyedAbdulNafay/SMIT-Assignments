@@ -1,12 +1,13 @@
 import 'dart:io';
 void main(){
   stdout.write("Enter number: ");
-  String str_num = stdin.readLineSync() ?? '0';
+  int num = int.parse(stdin.readLineSync() ?? '0');
   int sum = 0;
-
-  for (var i = 0; i < str_num.length; i++) {
-    sum += int.parse(str_num[i]);
+  
+  while (num > 0) {
+    sum += num%10;
+    num = num ~/ 10;
   }
-
+  
   print(sum);
 }
